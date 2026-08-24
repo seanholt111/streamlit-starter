@@ -1,6 +1,9 @@
-# Sean’s Streamlit starter
+# TVM withdrawal calculator
 
-Tiny Streamlit app for **Streamlit Community Cloud** (free Python hosting with a shareable URL).
+Estimates how much you can withdraw each year (or month) so a starting balance
+reaches **$0** at the end of a chosen period, given a constant market interest rate.
+
+**Live:** https://seansgrokbot.streamlit.app/
 
 ## Local
 ```bash
@@ -8,10 +11,5 @@ pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
 
-## Deploy (once)
-1. Sign in at [share.streamlit.io](https://share.streamlit.io) with **GitHub**.
-2. **New app** → pick repo `seanholt111/streamlit-starter`.
-3. Main file: `streamlit_app.py` → Deploy.
-4. Copy the `*.streamlit.app` link and send it to Skyler.
-
-After that, Skyler updates this repo and the app redeploys.
+## Deploy
+Push to `main` on this repo; Streamlit Community Cloud redeploys automatically.
