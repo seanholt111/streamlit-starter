@@ -145,6 +145,6 @@ with st.expander("Period-by-period schedule", expanded=False):
     for col in show.columns:
         if col not in ("Period", "Year"):
             show[col] = show[col].map(lambda v: f"{v:,.2f}")
-    st.dataframe(show, use_container_width=True, hide_index=True)
+    st.dataframe(show, width='stretch', hide_index=True)
 
 st.caption("Live on Streamlit Community Cloud · repo seanholt111/streamlit-starter")
